@@ -4,8 +4,9 @@
   type: github
   icon: 'fab fa-github'
 -
-  type: twitter
-  icon: 'fab fa-twitter'
+  type: linkedin
+  icon: 'fab fa-linkedin'
+  url: https://www.linkedin.com/in/%EC%9A%A9%ED%9B%88-%EC%A1%B0-b18471193/
 -
   type: email
   icon: 'fas fa-envelope'
