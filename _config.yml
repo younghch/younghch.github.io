@@ -19,7 +19,7 @@ timezone: Asia/Seoul
 
 title: Younghch                        # the main title
 
-tagline: 개발 일지   # it will display as the sub-title
+tagline: 개발 기록   # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
   개발, 알고리즘, 도커, 쿠버네티스
@@ -63,7 +63,7 @@ google_analytics:
 #     light  - Use the light color scheme
 #     dark   - Use the dark color scheme
 #
-theme_mode:   # [light|dark]
+theme_mode: light  # [light|dark]
 
 # The CDN endpoint for images.
 # Notice that once it is assigned, the CDN url
