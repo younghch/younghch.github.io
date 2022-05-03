@@ -1,6 +1,6 @@
 ---
 title: Context Switch
-date: 2022-02-23 18:00:00 +09:00
+date: 2022-05-03 18:00:00 +09:00
 categories: [운영체제]
 tags: [OS, context switch, limited direct execution]
 math: false
