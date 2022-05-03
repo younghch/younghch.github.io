@@ -2,7 +2,7 @@
 title: System call
 date: 2022-05-03 14:00:00 +09:00
 categories: [운영체제]
-tags: [System call]
+tags: [OS, system call, limited direct execution]
 math: false
 toc: true
 ---
