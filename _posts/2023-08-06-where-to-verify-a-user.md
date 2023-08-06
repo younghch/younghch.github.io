@@ -35,9 +35,13 @@ aws 프리티어가 100만 requests와 400,000 GB-seconds의 compute time을 지
 - MSA에 적합하다.
 - 쉽게 요청을 모니터링 할 수 있다.
 - aws fully managed service로 다운될 걱정이 적다.
+
 #### 필요성에 대한 의문
+
 - K8s Ingress를 사용하지 않는다면 서비스마다 loadbalancer 인스턴스가 필요해 추가 비용이 든다. K8s Ingress를 사용한다면 Gateway를 두개 사용하는 것과 같아 API Gateway의 필요성이 적은것 같다.
 - 프런트 서비스로의 라우팅은 Route53에서도 할 수 있다.
+
+
 ### Kubernetes Ingress Controller
 
 Nginx Kubernetes Ingress Controller는 JWT validation을 지원한다.([Nginx_JWT_Validation_Policy](https://www.nginx.com/blog/announcing-nginx-ingress-controller-release-1-9-0/#policies))
@@ -51,6 +55,7 @@ Nginx Kubernetes Ingress Controller는 JWT validation을 지원한다.([Nginx_JW
 - MSA에 적합하다.
 
 #### 단점
+
 - 모든 기능을 직접 설정해야한다.
 - single point of failure => controller가 다운되면 전체 서비스가 다운된다.
 
@@ -65,4 +70,5 @@ Nginx Kubernetes Ingress Controller는 JWT validation을 지원한다.([Nginx_JW
 - 인증이 필요한 곳에 어노테이션만 추가하면 되서 직관적이다.
 
 #### 단점
+
 - 스프링 이외의 서버가 들어왔을 때 인증이 여러 곳에서 관리된다.
