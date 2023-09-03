@@ -40,10 +40,10 @@ Ranking, Gym, User 이렇게 세개의 바운디드 컨텍스트로 나누고 Ra
 `회원가입한 유저는 기록을 등록할 수 있다. 기록을 등록할 수 있는 종목은 스쿼트, 벤치프레스, 데드리프트 세가지이다. 기록이 종목별 기준값보다 크면 등록시 인증 파일을 첨부해야한다. 기준값보다 낮은 기록은 바로 랭킹에 반영되어 순위가 표시되고 기준값보다 큰 기록은 심사를 통해 반영된다. 랭킹은 종목별로 유저 기록 중 시즌 내 가장 큰 값으로 계산된다.`
 
 위 시나리오에서 랭킹 바운디드 컨택스 내 도메인을 다음과 같이 정의헀다
-<img src="../assets/img/ddd-ranking-bounded-context.png"/>
+<img src="/assets/img/ddd-ranking-bounded-context.png"/>
 
 정의된 도메인 내에서 트렌젝션 별로 어그리게이트를 나눠봤다.
-<img src="../assets/img/ddd-ranking-bounded-context-aggregate.png"/>
+<img src="/assets/img/ddd-ranking-bounded-context-aggregate.png"/>
 
 랭킹이 기록 등록과 함께 실시간으로 업데이트 되어야하면 같은 어그리게이트에 묶이는게 맞겠지만 모든 기록 등록이 랭킹의 변화로 이어지지 않고 기준치 이상의 기록은 심사가 완료되어야 업데이트 되기 때문에 다른 트렌젝션에서 처리된다고 판단했다.
 
